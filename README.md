@@ -29,7 +29,7 @@ This website mimics the look and feel of early 2000s game sites with:
 
 ## 🖼️ Screenshots
 
-Coming soon! (Placeholder loading screens currently displayed)
+Coming soon! (Placeholder logo)
 
 ## 🚀 Getting Started
 
@@ -40,19 +40,16 @@ To run locally:
 
 ## 🌐 Live Demo
 
-The official website is hosted at: [https://yourdomain.com](https://yourdomain.com)
+The official website is hosted at: [https://domi23.github.io/Trashborn/](https://domi23.github.io/Trashborn/)
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
 
 For press inquiries and support:
 - Email: contact@trashborngame.com
-- Discord: [Join our server](https://discord.gg/yourlink)
-- Twitter: [@TrashbornGame](https://twitter.com/TrashbornGame)
+- Discord: [Join our server](https://discord.gg/yourlink)  (NOT Available)
+- Twitter: [@TrashbornGame](https://twitter.com/yourlink) (NOT Available)
 
 ---
 
-*"Everything is disposable... except your skills."* - Trashborn motto
+*"Everything is disposable... except your skills."*
