@@ -46,7 +46,7 @@ The official website is hosted at: [https://domi23.github.io/Trashborn/](https:/
 ## 📧 Contact
 
 For press inquiries and support:
-- Email: contact@trashborngame.com
+- Email: contact@trashborngame.com (NOT Available)
 - Discord: [Join our server](https://discord.gg/yourlink)  (NOT Available)
 - Twitter: [@TrashbornGame](https://twitter.com/yourlink) (NOT Available)
 
