@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trashborn - PSX-style Roguelike Action</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.postimg.cc/XqBqxc1J/gamelogo.png" type="image/x-icon">
+</head>
+<body class="bg-black text-white">
+    <!-- CRT Scanlines Effect -->
+    <div class="scanlines"></div>
+    
+    <!-- Flashing Warning -->
+    <div class="bg-yellow-500 text-black text-center py-1 px-4 mb-4 font-bold pixel-text text-sm md:text-base animate-pulse">
+        <span class="mr-2">⚠️</span> BEST VIEWED IN 800x600 RESOLUTION <span class="ml-2">⚠️</span>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 max-w-4xl">
+        <header class="psx-border bg-gray-900 p-4 mb-6 relative">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-16 h-16 bg-red-600 psx-border mr-4 flex items-center justify-center">
+                        <span class="pixel-text text-4xl">T</span>
+                    </div>
+                    <h1 class="pixel-text text-4xl md:text-5xl text-yellow-400 glitch-effect">TRASHBORN</h1>
+                </div>
+                <div class="text-right">
+                    <p class="text-green-400 pixel-text text-sm">v1.0</p>
+                    <p class="text-gray-400 text-xs">© 2025 Trashborn</p>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-0 right-0 bg-blue-700 text-white px-2 py-1 text-xs">
+                <span class="mr-1">🔴</span> REC
+            </div>
+        </header>
+        
+        <!-- Navigation -->
+        <nav class="psx-border bg-gray-800 p-2 mb-6 flex flex-wrap justify-center">
+            <a href="#about" class="psx-button px-4 py-2 mx-1 my-1 pixel-text">ABOUT</a>
+            <a href="#screenshots" class="psx-button px-4 py-2 mx-1 my-1 pixel-text">SCREENSHOTS</a>
+            <a href="#features" class="psx-button px-4 py-2 mx-1 my-1 pixel-text">FEATURES</a>
+            <a href="#download" class="psx-button px-4 py-2 mx-1 my-1 pixel-text">DOWNLOAD</a>
+            <a href="#faq" class="psx-button px-4 py-2 mx-1 my-1 pixel-text">FAQ</a>
+            <a href="#links" class="psx-button px-4 py-2 mx-1 my-1 pixel-text">LINKS</a>
+        </nav>
+        
+        <!-- Marquee -->
+        <div class="psx-border bg-gray-900 p-2 mb-6 overflow-hidden">
+            <div class="marquee text-yellow-400 pixel-text text-sm">
+                ▶▶▶ TRASHBORN - THE ULTIMATE PSX-STYLE ROGUELIKE ACTION EXPERIENCE ◀◀◀ FEATURING: PROCEDURAL GENERATION • PERMADEATH • RETRO AESTHETIC • CHALLENGING GAMEPLAY • LIMITED EDITION • COMING SOON TO DREAMCAST? • OFFICIAL SOUNDTRACK AVAILABLE • JOIN OUR NEWGROUNDS COMMUNITY • PLAY THE DEMO TODAY • ▶▶▶
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about" class="psx-border bg-gray-800 p-4 mb-6">
+                <h2 class="pixel-text text-2xl text-yellow-400 mb-4 flex items-center">
+                    <span class="bg-blue-600 px-2 mr-2">ABOUT</span>
+                </h2>
+                
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="psx-border bg-gray-900 p-4 mb-4">
+                            <p class="mb-4">Trashborn is a <span class="text-yellow-400">PSX-style roguelike action game</span> that takes you back to the golden era of early 2000s gaming. With its <span class="text-green-400">low-poly aesthetic</span>, <span class="text-red-400">crunchy combat</span>, and <span class="text-blue-400">procedurally generated dungeons</span>, Trashborn offers a challenging experience reminiscent of classic PlayStation titles.</p>
+                            
+                            <p class="mb-4">In a world where everything is disposable, you play as a <span class="text-purple-400">raccoon</span> fighting through ever-changing wastelands filled with mutated creatures and forgotten technology.</p>
+                            
+                            <p>Trashborn has gained a cult following among retro gaming enthusiasts.</p>
+                        </div>
+                        
+                        <div class="psx-border bg-gray-900 p-4 text-center">
+                            <h3 class="pixel-text text-xl text-red-400 mb-2">SYSTEM REQUIREMENTS</h3>
+                            <div class="grid grid-cols-2 gap-2 text-sm">
+                                <div class="text-left">
+                                    <p><span class="text-yellow-400">OS:</span> Windows 10/11</p>
+                                    <p><span class="text-yellow-400">CPU:</span>Intel core i3-3220 3.30Ghz</p>
+                                </div>
+                                <div class="text-left">
+                                    <p><span class="text-yellow-400">RAM:</span> 4Gb</p>
+                                    <p><span class="text-yellow-400">GPU:</span> 512MB VRAM</p>
+                                </div>
+                            </div>
+                            <!-- <p class="text-xs mt-2 text-gray-400">*Gamepad recommended*</p> -->
+                        </div>
+                    </div>
+                    
+
+                    <!-- News cestion -->
+                    <div class="flex-1">
+                        <div class="psx-border bg-gray-900 p-4 h-full">
+                            <h3 class="pixel-text text-xl text-green-400 mb-2">LATEST NEWS</h3>
+                            
+                            <!-- <div class="mb-4 pb-4 border-b border-gray-700">
+                                <p class="text-yellow-400 text-sm">05/12/2004</p>
+                                <p class="font-bold">Version 1.0 Released!</p>
+                                <p class="text-sm">After years in development, the full version of Trashborn is finally here! Includes 5 new biomes and the final boss encounter.</p>
+                            </div>
+                            
+                            <div class="mb-4 pb-4 border-b border-gray-700">
+                                <p class="text-yellow-400 text-sm">03/22/2004</p>
+                                <p class="font-bold">Demo Disc #3 Available</p>
+                                <p class="text-sm">Our third demo is now included in PlayStation Underground issue #47. Try the new sewer level!</p>
+                            </div> -->
+                            
+                            <div class="mb-4 pb-4 border-b border-gray-700">
+                                <p class="text-yellow-400 text-sm">03/26/2025</p>
+                                <p class="font-bold">Soundtrack Release</p>
+                                <p class="text-sm">The official Trashborn OST is now available. </p>
+                            </div>
+                            
+                            <div class="text-right">
+                                <button class="psx-button px-3 py-1 text-sm pixel-text">VIEW ARCHIVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Screenshots Section -->
+            <section id="screenshots" class="psx-border bg-gray-800 p-4 mb-6">
+                <h2 class="pixel-text text-2xl text-yellow-400 mb-4 flex items-center">
+                    <span class="bg-red-600 px-2 mr-2">SCREENSHOTS</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="psx-border bg-gray-900 p-2">
+                        <div class="bg-gray-800 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="https://i.postimg.cc/XqBqxc1J/gamelogo.png" alt="Gun preview screenshot" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-center mt-2 text-sm">Gun preview</p>
+                    </div>
+                    
+                    <div class="psx-border bg-gray-900 p-2">
+                        <div class="bg-gray-800 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="https://i.postimg.cc/XqBqxc1J/gamelogo.png" alt="Gun preview screenshot" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-center mt-2 text-sm">Sewer level</p>
+                    </div>
+                    
+                    <div class="psx-border bg-gray-900 p-2">
+                        <div class="bg-gray-800 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="https://i.postimg.cc/XqBqxc1J/gamelogo.png" alt="Gun preview screenshot" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-center mt-2 text-sm">Boss fight</p>
+                    </div>
+                    
+                    <div class="psx-border bg-gray-900 p-2">
+                        <div class="bg-gray-800 h-48 flex items-center justify-center overflow-hidden">
+                            <img src="https://i.postimg.cc/XqBqxc1J/gamelogo.png" alt="Gun preview screenshot" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-center mt-2 text-sm">Base preview</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button class="psx-button px-4 py-2 pixel-text">VIEW MORE (56K WARNING)</button>
+                </div>
+            </section>
+            
+            <!-- Features Section -->
+            <section id="features" class="psx-border bg-gray-800 p-4 mb-6">
+                <h2 class="pixel-text text-2xl text-yellow-400 mb-4 flex items-center">
+                    <span class="bg-green-600 px-2 mr-2">FEATURES</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="psx-border bg-gray-900 p-4">
+                        <h3 class="text-xl text-blue-400 mb-2 pixel-text">GAMEPLAY</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Base upgrade</li>
+                            <li>'Death' with unlockable persistent upgrades</li>
+                            <li>Fast-paced melee combat with dodging and parrying</li>
+                            <li>Over 10+ unique weapons and items to discover</li>
+                            <li>Challenging boss encounters with unique patterns</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="psx-border bg-gray-900 p-4">
+                        <h3 class="text-xl text-purple-400 mb-2 pixel-text">AESTHETIC</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Authentic low-poly PSX-style graphics</li>
+                            <li>Vertex warping and texture wobble effects</li>
+                            <li>CRT filter with scanlines and color bleed</li>
+                            <li>Original hardrock/metal/industrial soundtrack</li>
+                            <li>Limited color palette for authentic retro feel</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="psx-border bg-gray-900 p-4">
+                        <h3 class="text-xl text-red-400 mb-2 pixel-text">CONTENT</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>5 distinct environments with unique enemies</li>
+                            <li>10+ hours of gameplay</li>
+                            <li>Multiple endings based on your choices</li>
+                            <li>Secret characters and unlockable modes</li>
+                            <li>New Game+ with increased difficulty</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="psx-border bg-gray-900 p-4">
+                        <h3 class="text-xl text-pink-400 mb-2 pixel-text">EXTRAS</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>All features unlocked</li>
+                            <li>Regular content updates</li>
+                            <li>Steam achievements</li>
+                            <li>Cloud saves</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Download Section -->
+            <section id="download" class="psx-border bg-gray-800 p-4 mb-6">
+                <h2 class="pixel-text text-2xl text-yellow-400 mb-4 flex items-center">
+                    <span class="bg-blue-600 px-2 mr-2">DOWNLOAD</span>
+                </h2>
+                
+                <div class="psx-border bg-gray-900 p-4 mb-4">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl text-green-400 mb-2 pixel-text">DEMO VERSION</h3>
+                            <p class="mb-4">Try the free demo before purchasing! Includes the first biome and 3 weapons.</p>
+                            <ul class="list-disc pl-5 mb-4 space-y-1">
+                                <li>File size: 200.7MB</li>
+                                <li>Playtime: ~30 minutes</li>
+                                <li>Progress carries to full version</li>
+                            </ul>
+                            <button class="psx-button px-4 py-2 pixel-text w-full">DOWNLOAD DEMO (v0.0.1)</button>
+                        </div>
+                        
+                        <div class="flex-1">
+                            <h3 class="text-xl text-red-400 mb-2 pixel-text">FULL VERSION</h3>
+                            <p class="mb-4">Get the complete Trashborn experience with all content and future updates.</p>
+                            <ul class="list-disc pl-5 mb-4 space-y-1">
+                                <li>File size: 348.2MB</li>
+                                <li>Unlocks all features</li>
+                                <li>Includes digital manual</li>
+                            </ul>
+                            <button class="psx-button px-4 py-2 pixel-text w-full bg-red-700 hover:bg-red-600">BUY NOW ($9.99) <br> (NOT AVAILABLE)</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="psx-border bg-gray-900 p-4">
+                    <h3 class="text-xl text-yellow-400 mb-2 pixel-text">PHYSICAL EDITION</h3>
+                    <div class="flex flex-col md:flex-row items-center gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="psx-border bg-gray-800 w-32 h-32 flex items-center justify-center">
+                                <i class="fas fa-compact-disc text-4xl text-gray-500"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="mb-2">Limited edition CD-ROM includes:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Game on professionally pressed CD</li>
+                                <li>Full-color printed manual</li>
+                                <li>Exclusive sticker sheet</li>
+                                <li>Soundtrack CD</li>
+                                <li>Numbered certificate</li>
+                            </ul>
+                            <p class="mt-2 text-sm text-gray-400">Only 500 copies made!</p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="psx-button px-4 py-2 pixel-text">PRE-ORDER ($39.99)</button>
+                    </div>
+                </div> -->
+            </section>
+            
+            <!-- FAQ Section -->
+            <section id="faq" class="psx-border bg-gray-800 p-4 mb-6">
+                <h2 class="pixel-text text-2xl text-yellow-400 mb-4 flex items-center">
+                    <span class="bg-purple-600 px-2 mr-2">FAQ</span>
+                </h2>
+                
+                <div class="psx-border bg-gray-900 p-4">
+                    <div class="mb-4 pb-4 border-b border-gray-700">
+                        <h3 class="text-lg text-blue-400 mb-1">Q: Will Trashborn work on my modern PC?</h3>
+                        <p>A: Yes! While designed to look like a PSX game, Trashborn runs natively on Windows 10/11. We've included compatibility modes if you experience issues.</p>
+                    </div>
+                    
+                    <div class="mb-4 pb-4 border-b border-gray-700">
+                        <h3 class="text-lg text-green-400 mb-1">Q: Is there controller support?</h3>
+                        <p>A: Nope.</p>
+                    </div>
+                    
+                    <div class="mb-4 pb-4 border-b border-gray-700">
+                        <h3 class="text-lg text-red-400 mb-1">Q: How difficult is the game?</h3>
+                        <p>A: Trashborn is designed to be challenging but fair. Expect to die often as you learn enemy patterns and mechanics. We've included accessibility options to adjust difficulty.</p>
+                    </div>
+                    
+                    <div class="mb-4 pb-4 border-b border-gray-700">
+                        <h3 class="text-lg text-yellow-400 mb-1">Q: Is there multiplayer?</h3>
+                        <p>A: No, Trashborn is a single-player experience.</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-lg text-pink-400 mb-1">Q: Will there be more content updates?</h3>
+                        <p>A: We're planning at least two major DLC expansions that will add new biomes, enemies, and gameplay mechanics. These will be free for physical edition owners!</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Links Section -->
+            <section id="links" class="psx-border bg-gray-800 p-4 mb-6">
+                <h2 class="pixel-text text-2xl text-yellow-400 mb-4 flex items-center">
+                    <span class="bg-pink-600 px-2 mr-2">LINKS</span>
+                </h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <a href="#" class="psx-button p-3 text-center">
+                        <i class="fab fa-discord text-2xl mb-1"></i>
+                        <p class="text-xs">DISCORD</p>
+                    </a>
+                    
+                    <a href="#" class="psx-button p-3 text-center">
+                        <i class="fab fa-youtube text-2xl mb-1"></i>
+                        <p class="text-xs">YOUTUBE</p>
+                    </a>
+                    
+                    <a href="#" class="psx-button p-3 text-center">
+                        <i class="fab fa-itch-io text-2xl mb-1"></i>
+                        <p class="text-xs">ITCH.IO</p>
+                    </a>
+                    
+                    <a href="#" class="psx-button p-3 text-center">
+                        <i class="fas fa-envelope text-2xl mb-1"></i>
+                        <p class="text-xs">CONTACT</p>
+                    </a>
+                    
+                    <a href="#" class="psx-button p-3 text-center">
+                        <i class="fas fa-book text-2xl mb-1"></i>
+                        <p class="text-xs">MANUAL</p>
+                    </a>
+                    
+                    <a href="#" class="psx-button p-3 text-center">
+                        <i class="fas fa-headphones text-2xl mb-1"></i>
+                        <p class="text-xs">SOUNDTRACK</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="psx-border bg-gray-900 p-4 mt-6 text-center text-sm">
+            <div class="mb-2">
+                <span class="text-yellow-400">VISITOR COUNT:</span> 
+                <span class="text-green-400 ml-2">#004287</span>
+            </div>
+            
+            <div class="mb-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AkEEjIZJgKX3wAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAJklEQVQ4y2NgGAWjYBSMglEwCkbBKBgFgwsw0lLx////Gf7//8/AyMjIwAAALQABWQ0UJAAAAABJRU5ErkJggg==" alt="Best viewed with Netscape Navigator" class="inline-block h-6">
+            </div>
+            
+            <p>© 2025 TRASHBORN © </p>
+            <p class="text-gray-500 text-xs mt-2">This website is best viewed at 800x600 resolution with Internet Explorer 6.0</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
